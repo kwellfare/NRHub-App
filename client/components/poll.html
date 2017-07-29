@@ -1,0 +1,26 @@
+
+<template name="poll">
+	<div class="poll">
+	
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4>{{name}}</h4>
+			{{description}}
+		</div>
+	<div class="poll panel-body" data-id="{{ _id}}">
+		<h4>{{ question }}</h4>
+<!--allows vote to go to the correct question-->
+		{{ #each indexedArray choices }}
+		<a href="#" class="vote btn btn-primary btn-block" data-id="{{_index }}"> 
+			<span class="votes badge pull-right">votes: {{ votes }}</span>
+			<span class="text">{{ text }}</span>
+
+		</a>
+
+		{{ /each }}
+
+</div>
+</div>
+
+	</div>
+</template>
