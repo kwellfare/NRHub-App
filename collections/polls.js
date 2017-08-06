@@ -9,11 +9,17 @@ if (Meteor.isServer) {
   Meteor.publish("polls", function () {
     return Polls.find();
   });
+
+
 }
 
 if (Meteor.isClient) {
 	//This code runs on the client
 	Meteor.subscribe("polls");
+
+
+
+
 }
 
 

@@ -1,11 +1,19 @@
 
 <!--main body of application-->
 
+
+
+
+
+
+
+
+
+
+
 <body>
 
-
-
-
+{{ >home }}
 
 
 <!-- LOOP OVER POLLS AND SHOW EACH-->
@@ -14,18 +22,20 @@
 
 <div class="polls">
 
-
-	{{ #each polls }}
+{{ #each polls }}
 		
 			{{ >poll }}
 	
 
 	{{ /each }}
+		
+
 
 
 </div>
 
 
-
-
 </body>
+
+
+

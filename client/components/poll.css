@@ -2,16 +2,16 @@
 
 
 .polls {
-	margin: 5%; 
 	
+ 
 
-     
-      
 }
 
 .panel {
-	
-	
-
-
+	display:inline-block;
+  width:100%;
+  background-color: #f2f2f2;
 }
+
+
+

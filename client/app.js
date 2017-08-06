@@ -1,8 +1,9 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Mongo } from 'meteor/mongo';
-
 import { Accounts} from 'meteor/accounts-base';
+
+import './app.body.html';
 
 import Polls from '/collections/polls.js';
 
@@ -22,6 +23,10 @@ return Polls.find();
 
 
 
+
+
+
+
 UI.registerHelper('indexedArray', function(context, options) {
   if (context) {
     return context.map(function(item, index) {
@@ -31,6 +36,9 @@ UI.registerHelper('indexedArray', function(context, options) {
   }
 });
 
-ui.config({
-  passwordSignupFields: 'USERNAME_ONLY',
+Accounts.ui.config({
+  
+  passwordSignupFields: 'USERNAME_ONLY'
 });
+
+

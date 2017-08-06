@@ -1,5 +1,28 @@
-.navbar-header {
-	padding-top: 40px;
-    margin: 50px;
 
+
+.display-1 {
+	display:flex;
+	margin-left: 30px;
+	padding: 10px;
+}
+
+.h2 {
+	color:white;
+
+}
+
+body {
+
+	background-color:white;
+}
+.login {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+     background-color: white;
+    
+}
+
+.login:hover {
+    background-color: #95dee3; /* Green */
+    
 }

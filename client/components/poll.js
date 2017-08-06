@@ -8,20 +8,55 @@ import Polls from '/collections/polls.js';
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 //HANDLING THE VOTING ACTIONS
 //attach events to the poll template
 Template.poll.events({
+
+
+
 	//event to handle clicking a choice
 	'click .vote': function(event) {
+var finduser = Meteor.user();
+var userId = Meteor.userId();
+		if(!userId ) {
+      alert("You are required to login to vote");
+ 
+     return;  
+   }
 
-		//prevent the default behavioer
+
+
+
+//prevent the default behavioer
 		event.preventDefault();
-
-		//get the parent poll id
+//get the parent poll id
 		var pollID = $(event.currentTarget).parent('.poll').data('id');
 		var voteID = $(event.currentTarget).data('id');
+        
 
-		Meteor.call("addVote", pollID, voteID);
-	}
+var voters = [] ;
+
+  
+ 
+
+
+		
+
+		
+		Meteor.call("addVote", pollID, voteID, voters);
+}
+	
 
 });
