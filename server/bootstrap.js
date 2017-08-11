@@ -2,8 +2,6 @@ import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Mongo } from 'meteor/mongo';
 
-
-
 import Polls from '/collections/polls.js';
 
 
@@ -13,7 +11,7 @@ Meteor.startup(function() {
 //if no polls exist create sample data
 if (Polls.find().count() === 0) {
 
-	//create samples
+	//create poll information
 	var samplePolls = [
 {
 	name: 'Business Name #1',

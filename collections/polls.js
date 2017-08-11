@@ -1,6 +1,6 @@
 import { Mongo } from 'meteor/mongo';
 import { Meteor } from 'meteor/meteor';
-
+import { check } from 'meteor/check';
 
 const Polls = new Mongo.Collection('polls');
 
@@ -11,13 +11,14 @@ if (Meteor.isServer) {
   });
 
 
+
+
 }
 
 if (Meteor.isClient) {
 	//This code runs on the client
 	Meteor.subscribe("polls");
-
-
+   
 
 
 }

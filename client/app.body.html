@@ -1,39 +1,21 @@
 
 <!--main body of application-->
 
-
-
-
-
-
-
-
-
-
-
 <body>
-
+<!-- nests home section into main page -->
 {{ >home }}
 
 
 <!-- LOOP OVER POLLS AND SHOW EACH-->
-
-
-
 <div class="polls">
-
-{{ #each polls }}
-		
-			{{ >poll }}
-	
-
+	{{ #each polls }}
+		{{ >poll }}
 	{{ /each }}
 		
-
-
+<!-- adds scroll button to top -->
+<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 
 </div>
-
 
 </body>
 

@@ -1,17 +1,26 @@
 
-
+/*Poll section styling*/
 
 .polls {
-	
- 
 
+	margin:auto;
+	max-width: 1250px;
+	padding-right: 8%;
+	padding-left: 8%;
+	
 }
 
 .panel {
 	display:inline-block;
-  width:100%;
-  background-color: #f2f2f2;
+	width:100%;
+	background-color: white;
+}
+.panel.heading {
+	background-color: white;
 }
 
+.address {
+	 text-transform: capitalize;
+}
 
 
