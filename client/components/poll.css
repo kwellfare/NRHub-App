@@ -24,3 +24,17 @@
 }
 
 
+
+@media only screen and (max-device-width: 480px)  {
+
+.polls {
+
+	
+	max-width: 300px;
+	padding-right: 8%;
+	padding-left: 8%;
+	margin: 0;
+}
+
+
+	}

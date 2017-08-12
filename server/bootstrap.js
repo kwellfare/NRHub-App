@@ -103,7 +103,7 @@ voters: [],
 // loop over each sample poll and insert into database
 _.forEach(samplePolls, function(poll) {
 	Polls.insert(poll);
-
+console.log('The variable Polls is' + Polls);
 
 
 });

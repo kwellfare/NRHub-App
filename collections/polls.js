@@ -8,6 +8,7 @@ if (Meteor.isServer) {
   // This code only runs on the server
   Meteor.publish("polls", function () {
     return Polls.find();
+    console.log(Polls.find().fetch());
   });
 
 

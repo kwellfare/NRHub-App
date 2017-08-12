@@ -31,6 +31,7 @@ UI.registerHelper('indexedArray', function(context, options) {
     return context.map(function(item, index) {
       item._index = index;
       return item;
+      console.log('The index array is' + item);
     });
   }
 });

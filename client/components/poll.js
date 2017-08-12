@@ -18,7 +18,7 @@ Template.poll.events({
     //if user is not logged in when voting it will create an alert
 		if(!userId ) {
       alert("You are required to login to vote");
- 
+     
      return;  
    }
 
@@ -31,6 +31,7 @@ Template.poll.events({
 		var voteID = $(event.currentTarget).data('id');
         
 		var voters = [];
+		
 	
 
 		//call the methods
