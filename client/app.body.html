@@ -1,23 +1,27 @@
-
 <!--main body of application-->
-
 <body>
+<!-- If browser does not support Javascript -->
+<noscript>Your browser does not support JavaScript!</noscript>
+
 <!-- nests home section into main page -->
+
+{{#if Template.subscriptionsReady}}
 {{ >home }}
+{{else}}
+<div class="loading" style="text-align: center;"><h1>Loading...</h1></div>
+{{>spinner}}
+{{/if}}
 
 
 <!-- LOOP OVER POLLS AND SHOW EACH-->
+<main role="main">
+
 <div class="polls">
 	{{ #each polls }}
 		{{ >poll }}
-	{{ /each }}
-		
+	{{ /each }}	
 <!-- adds scroll button to top -->
 <a id="back2Top" title="Back to top" href="#">&#10148;</a>
-
-</div>
-
-</body>
-
+</div></main></body>
 
 

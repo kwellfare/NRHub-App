@@ -1,16 +1,12 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Mongo } from 'meteor/mongo';
-
 import Polls from '/collections/polls.js';
-
 
 // code to run  on server when the meteor app is started
 Meteor.startup(function() {
-
 //if no polls exist create sample data
 if (Polls.find().count() === 0) {
-
 	//create poll information
 	var samplePolls = [
 {
@@ -104,15 +100,6 @@ voters: [],
 _.forEach(samplePolls, function(poll) {
 	Polls.insert(poll);
 console.log('The variable Polls is' + Polls);
-
-
 });
-
-
-
-
-
 }
-
-
 });

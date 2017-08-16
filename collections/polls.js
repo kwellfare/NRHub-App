@@ -1,6 +1,6 @@
 import { Mongo } from 'meteor/mongo';
 import { Meteor } from 'meteor/meteor';
-import { check } from 'meteor/check';
+
 
 const Polls = new Mongo.Collection('polls');
 
@@ -8,7 +8,7 @@ if (Meteor.isServer) {
   // This code only runs on the server
   Meteor.publish("polls", function () {
     return Polls.find();
-    console.log(Polls.find().fetch());
+   // console.log(Polls.find().fetch());
   });
 
 

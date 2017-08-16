@@ -1,28 +1,27 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
-import { Mongo } from 'meteor/mongo';
-import { Accounts} from 'meteor/accounts-base';
 
+import { Accounts} from 'meteor/accounts-base';
+import {Session} from 'meteor/session';
 import './app.body.html';
 
 import Polls from '/collections/polls.js';
-
-
 
 // Give access to the poll objects from database and assign variables
 //body helper only works within the body of the app
 //returns all the polls in the collection
 Template.body.helpers({
   
-
 polls: function() {
 return Polls.find();
 }
-
  
 });
 
-
+Template.body.onCreated(function() {
+  var self = this;
+  self.subscribe('home');
+});
 
 //An index helper to find each poll
 
@@ -31,7 +30,7 @@ UI.registerHelper('indexedArray', function(context, options) {
     return context.map(function(item, index) {
       item._index = index;
       return item;
-      console.log('The index array is' + item);
+      //console.log('The index array is' + item);
     });
   }
 });
@@ -39,10 +38,8 @@ UI.registerHelper('indexedArray', function(context, options) {
 // A account helper that makes users sign up by username
 
 Accounts.ui.config({
-  
   passwordSignupFields: 'USERNAME_ONLY'
 });
-
 
 /*Scroll to top when arrow up clicked BEGIN
 uses scroll function*/

@@ -2,36 +2,26 @@
 <!-- This section displays the layout of all the polls -->
 
 <template name="poll">
-
 	<div class="poll">
-		<!-- Wrapped into bootstrap panels -->
+		<!-- Wrapped into bootsrap panels -->
 		<div class="panel panel-default">
-			<!-- poll heading including business info -->
-			<div class="panel-heading">
-			<h4>{{name}}</h4>
-			{{description}}
-				<div class="Address">{{ address }}</div>
+			<!-- the heading includes business info -->
+			<div class="panel-heading"><h4>{{name}}</h4>{{description}}
+				<div class="Address">{{address}}
+				</div>
 			</div>
-
-					<!-- poll body including the question button and votes -->
-					<div class="poll panel-body" data-id="{{ _id}}">
-
-					<h4>{{ question }}</h4>
-					<!--allows vote to go to the correct question-->
-					{{ #each indexedArray choices }}
-						<button id="ntnSave" class="vote btn btn-primary btn-block " data-id="{{_index }}"> 
-
-							<span class="votes badge pull-right"> votes: {{ votes }} </span>
-							<span class="text">{{ text }}</span> 
-
-						</button>
-					<!-- ends the iteration of displaying each choices -->
-					{{ /each }}
-
-					</div>
-
+			<!-- poll body includes question button and votes  -->
+			<div class="poll panel-body" data-id="{{_id}}">
+				<h4>{{question}}</h4>
+				<!-- allows vote to go to correct question -->
+				{{#each indexedArray choices}}
+				<button class="vote btn btn-primary btn-block " data-id="{{_index}}"> 
+				<span class="votes badge pull-right"> votes:{{votes}}</span>
+				<span class="text">{{text}}</span> 
+			</button>
+			{{/each}}
+			<!-- ends iteration of each choices -->
+			</div>
 		</div>
-
 	</div>
-
 </template>
