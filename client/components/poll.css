@@ -3,27 +3,67 @@
 
 
 
-
 .polls {
 
 	margin:auto;
 	max-width: 1250px;
 	padding-right: 8%;
 	padding-left: 8%;
+
 	
 }
+.text {
+	font-size:20px;
+font-weight:400;
+line-height:95%;
+
+}
+.votes {
+	font-size:15px;
+font-weight:700;
+line-height:95%;
+text-transform: capitalize;
+letter-spacing:1px;
+
+}
+
 
 .panel {
 	display:inline-block;
 	width:100%;
 	background-color: white;
-}
-.panel.heading {
-	background-color: white;
+	border:10px solid #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 .address {
-	 text-transform: capitalize;
+	 text-transform: uppercase;
+	 font-size:15px;
+font-weight:400;
+line-height:95%;
+
+letter-spacing:1px;
+}
+
+.name {
+	font-size:19px;
+font-weight:700;
+line-height:95%;
+letter-spacing:1px;
+}
+.description {
+	font-size:15px;
+font-weight:400;
+line-height:95%;
+letter-spacing:1px;
+
+}
+.question {
+	
+	font-size:25px;
+
+
 }
 
 
@@ -33,10 +73,37 @@
 .polls {
 
 	
-	max-width: 300px;
+	max-width: 400px;
 	padding-right: 8%;
 	padding-left: 8%;
 	margin: 0;
+}
+.text {
+	font-size:14px;
+font-weight:400;
+
+
+}
+.votes {
+	font-size:14px;
+font-weight:400;
+line-height:95%;
+
+}
+.description {
+	font-size:15px;
+font-weight:400;
+line-height:115%;
+letter-spacing:1px;
+
+}
+.address {
+	 
+	 font-size:15px;
+font-weight:400;
+line-height:125%;
+
+letter-spacing:1px;
 }
 
 

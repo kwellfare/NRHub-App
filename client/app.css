@@ -11,13 +11,15 @@ color:#fff
 }
 
 body {
-background-color:#fff
+	background-color: #DFDBE5;
+
 }
+
 
 .logo {
 display:flex;
 justify-content:center;
-margin:auto
+margin:auto;
 }
 
 .info {
@@ -46,7 +48,8 @@ list-style:none
 .section {
 display:flex;
 align-items:center;
-height:370px
+height:370px;
+
 }
 
 .flexbox-container {
@@ -58,7 +61,8 @@ display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-margin:auto
+margin:auto;
+
 }
 
 .data-well {
@@ -67,7 +71,8 @@ max-width:1000px;
 min-width:600px;
 padding:20px;
 max-height:1000px;
-border:2px solid #c2f0f0;
+border:10px double #c2f0f0;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 background-color:#fff
 }
 
@@ -94,7 +99,7 @@ cursor:pointer;
 transform:rotate(270deg);
 position:fixed;
 bottom:180px;
-right:.05%;
+right: 1.5%;
 background-color:#DDD;
 color:#555;
 text-align:center;
@@ -108,16 +113,25 @@ color:#000
 }
 
 
+
+
+
 @media only screen and (max-device-width: 60em) {
 .section {
 display:flex;
 align-items:center;
-max-width:300px;
-height:450px
+max-width:760px;
+height:675px
+
+
 }
 
+#back2Top {
+	right: .5em;
+	}
+
 .flexbox-container {
-max-width:300px;
+max-width:760px;
 align-items:center;
 justify-content:center;
 -webkit-flex-direction:row;
@@ -125,14 +139,23 @@ flex-direction:row
 }
 
 .data-well {
-max-width:400px;
+max-width:760px;
 min-width:300px;
-margin-left:5%
+font-size:20px;
+
+
 }
+.z {
+
+font-size:28px;
+
+
+}
+
 
 .jumbotron {
 margin-right:2%;
-max-width:300px;
+max-width:760px;
 margin-left:3%
 }
 
@@ -170,3 +193,7 @@ width:100%;
 margin-left:10px
 }
 }
+
+
+
+
