@@ -10,7 +10,13 @@
 	padding-right: 8%;
 	padding-left: 8%;
 
+
+
 	
+}
+.poll {
+	background-color:#DFDBE5;
+
 }
 .text {
 	font-size:20px;
@@ -64,6 +70,7 @@ letter-spacing:1px;
 	display:flex;
 	align-items:center;
 	justify-content:center;
+	
 
 
 }
