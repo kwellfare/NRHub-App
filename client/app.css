@@ -89,7 +89,7 @@ color: #004d99
 width:40px;
 line-height:40px;
 overflow:hidden;
-z-index:999;
+
 display:none;
 cursor:pointer;
 -moz-transform:rotate(270deg);
@@ -97,9 +97,8 @@ cursor:pointer;
 -o-transform:rotate(270deg);
 -ms-transform:rotate(270deg);
 transform:rotate(270deg);
-position:fixed;
-bottom:180px;
-right: 1.5%;
+
+float: right;
 background-color:#DDD;
 color:#555;
 text-align:center;
@@ -147,7 +146,7 @@ font-size:20px;
 }
 .z {
 
-font-size:28px;
+font-size:26px;
 
 
 }

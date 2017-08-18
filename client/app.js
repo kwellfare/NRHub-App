@@ -40,6 +40,9 @@ Accounts.ui.config({
   passwordSignupFields: 'USERNAME_ONLY'
 });
 
+
+
+
 /*Scroll to top when arrow up clicked BEGIN
 uses scroll function*/
 $(window).scroll(function() {
