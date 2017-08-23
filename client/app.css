@@ -6,8 +6,10 @@
 
 }
 
+
 .h2 {
 color:#fff
+
 }
 
 .bcolor {
@@ -15,64 +17,84 @@ color:#fff
 
 }
 .bcpolls {
-	
-	background-color: #DFDBE5;	
-	
+	background-color:#DFDBE5;
 }
+
+.navbar-right {
+	margin-right: 180px
+}
+
 
 .logo {
 display:flex;
 justify-content:center;
+max-width: 350px;
+max-height: 250px;
 margin:auto;
 }
 
 .info {
-display:flex;
-align-items:center
+	text-align:center;
+
+}
+
+.lead {
+	
+	text-align:center;
+
 }
 
 .login {
-   -webkit-transition-duration:.4s;
-   transition-duration:.4s;
+Â Â Â -webkit-transition-duration:.4s;
+Â Â Â transition-duration:.4s;
 background-color:#fff;
 border:2px solid #c2f0f0;
 border-radius:5px;
-   padding:15px 32px;
-   text-align:center;
+Â Â Â padding:15px 32px;
+Â Â Â text-align:center;
 text-transform:capitalize;
 letter-spacing:1px;
- max-width:400px;
-list-style:none
+Â max-width:200px;
+list-style:none;
+margin:auto;
 }
 
 .login:hover {
-   background-color:#95dee3
+Â Â Â background-color:#95dee3
 }
 
 .section {
-display:flex;
-align-items:center;
+
 height:370px;
 
+}
+.container-fluid {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top: 5%;
+	padding-bottom: 10%;
 
 }
 
 .flexbox-container {
-display:-ms-flex;
+
 display:-webkit-flex;
 display:-ms-flexbox;
 display:flex;
 -webkit-flex-direction:column;
 flex-direction:column;
+-webkit-align-items: center;
 align-items:center;
 justify-content:center;
-margin:auto;
+
 
 
 }
 
+
 .data-well {
-flex:2 1 auto;
+
 max-width:1000px;
 margin:auto;
 padding:20px;
@@ -82,13 +104,10 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 background-color:#fff
 }
 
-.flex-item {
-flex:2 1 auto;
-align-items:center
-}
+
 
 .section.h4 {
-color: #004d99
+color:Â #004d99
 }
 
 #back2Top {
@@ -109,7 +128,7 @@ background-color:#DDD;
 color:#555;
 text-align:center;
 font-size:30px;
-text-decoration:none
+text-decoration:none;
 }
 
 #back2Top:hover {
@@ -123,10 +142,9 @@ color:#000
 
 @media only screen and (max-device-width: 60em) {
 .section {
-display:flex;
-align-items:center;
+
 max-width:760px;
-height:675px
+height:550px
 
 
 }
@@ -136,32 +154,28 @@ height:675px
 	}
 
 .flexbox-container {
+	display: flex;
 max-width:760px;
 align-items:center;
 justify-content:center;
 -webkit-flex-direction:row;
-flex-direction:row
+flex-direction:row;
 }
 
 .data-well {
 max-width:760px;
 min-width:300px;
-font-size:20px;
+font-size:18px;
+font-style: small;
 
 
 }
 .z {
 
-font-size:26px;
+font-size:22px;
+font-style: bold;
 
 
-}
-
-
-.jumbotron {
-margin-right:2%;
-max-width:760px;
-margin-left:3%
 }
 
 .logo {
@@ -181,24 +195,27 @@ text-align:center
 }
 
 .lead {
-font-size:18px;
-font-weight:400;
-line-height:98%;
+font-size: 24px;
+font-weight:500px;
+line-height:110%;
 text-align:center
 }
 
 .login {
-      padding:5px 10px;
-   text-align:center
+Â Â Â Â Â Â padding:5px 10px;
+Â Â Â text-align:center;
+max-width:200px;
+
 }
+
+
 
 .nav {
 top:0;
 width:100%;
-margin-left:10px
-}
-}
 
 
+}
+}
 
 
