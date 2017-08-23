@@ -10,11 +10,15 @@
 color:#fff
 }
 
-body {
-	background-color: #DFDBE5;
+.bcolor {
+	background: linear-gradient(to top right, #003366 36%, #009999 78%);
 
 }
-
+.bcpolls {
+	
+	background-color: #DFDBE5;	
+	
+}
 
 .logo {
 display:flex;
