@@ -1,0 +1,47 @@
+<!--main body of application-->
+<body>
+<!-- If browser does not support Javascript -->
+<noscript>Your browser does not support JavaScript!</noscript>
+
+<!-- nests home section into main page -->
+
+{{#if Template.subscriptionsReady}}
+{{ >home }}
+{{else}}
+
+<div class="loading" style="text-align: center;"><h1>Loading...</h1></div>
+<div class="thumbnail xtra">
+	
+
+
+</div>
+{{/if}}
+
+
+<!-- LOOP OVER POLLS AND SHOW EACH-->
+<main role="main">
+	<div id="below"><h1 class="text-primary">Polls</h1></div>
+<div class ="bcpolls">
+
+<div class="polls">
+	{{ #each polls }}
+		{{ >poll }}
+	{{ /each }}	
+<!-- adds scroll button to top -->
+
+</div>
+</div>
+{{>footer}}
+
+</main>
+
+
+
+
+</body>
+
+
+
+
+
+

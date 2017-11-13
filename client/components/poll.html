@@ -1,0 +1,29 @@
+
+<!-- This section displays the layout of all the polls -->
+
+<template name="poll">
+	
+	<div class="poll">
+		<!-- Wrapped into bootsrap panels -->
+		<div class="panel panel-default">
+			<!-- the heading includes business info -->
+			<div class="panel-heading " style="background-color:#DFDBE5;"><h4 class="name">{{name}}</h4>
+				<div class="description">{{description}}</div>
+				<h5 class="address">{{address}}
+				</h5>
+			</div>
+			<!-- poll body includes question button and votes  -->
+			<div class="poll panel-body" data-id="{{_id}}">
+				<h3 class="question">{{question}}</h3>
+				<!-- allows vote to go to correct question -->
+				{{#each indexedArray choices}}
+				<button class="vote btn btn-primary btn-block " data-id="{{_index}}"> 
+				<div class="votes badge pull-right"> votes:{{votes}}</div>
+				<div class="text">{{text}}</div> 
+			</button>
+			{{/each}}
+			<!-- ends iteration of each choices -->
+			</div>
+		</div>
+	</div>
+</template>

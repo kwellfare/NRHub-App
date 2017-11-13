@@ -1,0 +1,348 @@
+/*Home(main) page and Nav styling*/
+
+.xtra {
+	height:300px;
+	background-color:#eee;
+
+}
+
+
+.h2 {
+color:#fff
+
+}
+
+.bcolor {
+	background: linear-gradient(to top right, #003366 36%, #009999 78%);
+
+}
+.bcpolls {
+	background-color:#DFDBE5;
+}
+
+.navbar-right {
+	margin-right: 180px
+}
+
+
+.logo {
+display:flex;
+justify-content:center;
+max-width: 350px;
+max-height: 250px;
+margin:auto;
+}
+
+.info {
+	text-align:center;
+
+}
+
+.lead {
+	align-content:center;
+	text-align:left;
+	font-size: 22px;
+	padding:0 20px 0 40px;
+
+}
+
+.login {
+   -webkit-transition-duration:.4s;
+   transition-duration:.4s;
+background-color:#fff;
+border:2px solid #c2f0f0;
+border-radius:5px;
+   padding:15px 32px;
+   text-align:center;
+text-transform:capitalize;
+letter-spacing:1px;
+ max-width:200px;
+list-style:none;
+margin:auto;
+}
+
+.login:hover {
+   background-color:#95dee3
+}
+
+.section {
+
+height:100%;
+font-size: 16px;
+
+
+}
+.container-fluid {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:2%;
+	padding-bottom: 10%;
+
+}
+
+.flexbox-container {
+
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-flex-direction:column;
+flex-direction:column;
+-webkit-align-items: center;
+align-items:center;
+justify-content:center;
+
+
+
+
+
+}
+
+.flex-item-a {
+
+
+color: black;
+
+padding:0px;
+font-size: 16px;
+
+
+
+
+}
+
+.flex-item-c {
+
+
+color: black;
+
+padding:0px;
+font-size: 16px;
+
+
+
+
+}
+
+.flex-item-b{
+
+color: black;
+
+padding: 0px;
+font-size: 16px;
+
+
+
+}
+
+.data-well {
+
+max-width:1010px;
+margin:auto;
+
+max-height:1000px;
+/*
+border:10px double #c2f0f0;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+background-color:#fff; */
+background-color:#DFDBE5;
+padding:40px;
+margin-bottom: 20px;
+
+}
+
+.view {
+	display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-align-items: center;
+align-items:center;
+justify-content:center;
+
+
+}
+a:link {
+	text-decoration: none;
+}
+
+.view button {
+	margin-top: 30px;
+	width:200px;
+	height: 60px;
+	border:none;
+	border-radius: 5px;
+	font-size: 18px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+#below {
+	height:100px;
+	display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-align-items: flex-start;
+align-items:flex-start;
+justify-content:center;
+text-align: center;
+background-color: #DFDBE5;
+font-variant: small-caps;
+
+}
+#below h1 {
+	
+	width:200px;
+	height:60px;
+	padding: 10px;
+}
+
+.section.h4 {
+color: #004d99
+}
+
+
+
+#back2Top {
+width:40px;
+line-height:40px;
+overflow:hidden;
+
+display:none;
+cursor:pointer;
+-moz-transform:rotate(270deg);
+-webkit-transform:rotate(270deg);
+-o-transform:rotate(270deg);
+-ms-transform:rotate(270deg);
+transform:rotate(270deg);
+
+float: right;
+background-color:#DDD;
+color:#555;
+text-align:center;
+font-size:30px;
+text-decoration:none;
+}
+
+#back2Top:hover {
+background-color:#DDF;
+color:#000
+}
+
+.z {
+
+
+width: auto;
+font-size: 22px;
+
+
+
+}
+
+
+
+
+@media only screen and (max-device-width: 60em) {
+.section {
+
+max-width:760px;
+height:650px
+
+
+}
+
+#back2Top {
+	right: .5em;
+	}
+
+.flexbox-container {
+	display: flex;
+max-width:760px;
+align-self:center;
+justify-content:center;
+-webkit-flex-direction:row;
+flex-direction:row;
+}
+
+.flex-item-a,
+.flex-item-b {
+	
+	height:auto;
+	text-align: left;
+
+	
+}
+
+
+
+.data-well {
+	
+max-width:760px;
+min-width:300px;
+font-size:18px;
+padding: 20px;
+font-style: small;
+
+
+
+
+}
+.z {
+
+font-size:22px;
+font-style: bold;
+height: auto;
+display: flex;
+text-align: left;
+align-self:center;
+
+-webkit-flex-direction:row;
+flex-direction:row;
+
+
+}
+
+.logo {
+display:flex;
+justify-content:center;
+align-items:center;
+margin:auto;
+max-width:230px;
+max-height:170px
+}
+
+.info {
+font-size:30px;
+font-weight:400;
+line-height:95%;
+text-align:center
+}
+
+.lead {
+font-size: 24px;
+font-weight:500px;
+line-height:110%;
+text-align:center
+}
+
+.login {
+      padding:5px 10px;
+   text-align:center;
+max-width:200px;
+
+}
+
+
+
+.nav {
+top:0;
+width:100%;
+
+
+}
+}
+
+
+
+
