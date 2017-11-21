@@ -5,17 +5,21 @@
 
 <!-- nests home section into main page -->
 
+
+
 {{#if Template.subscriptionsReady}}
+
 {{ >home }}
+
 {{else}}
+<div class="screen">
+<div class="loading"><h1>Loading...</h1></div>
 
-<div class="loading" style="text-align: center;"><h1>Loading...</h1></div>
-<div class="thumbnail xtra">
-	
-
+ <div id="key" class="fa fa-key"></div>
 
 </div>
 {{/if}}
+
 
 
 <!-- LOOP OVER POLLS AND SHOW EACH-->

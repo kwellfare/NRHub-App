@@ -14,13 +14,18 @@ Template.body.helpers({
 polls: function() {
 return Polls.find();
 }
+
+
  
 });
 
 Template.body.onCreated(function() {
    var self = this;
   self.subscribe('home');
+
 });
+
+
 
 //An index helper to find each poll
 
@@ -62,5 +67,6 @@ $(document).ready(function() {
 
 });
  /*Scroll to top when arrow up clicked END*/
+
 
 

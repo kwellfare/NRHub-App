@@ -8,7 +8,7 @@ Meteor.startup(function() {
 //if no polls exist create sample data
 if (Polls.find().count() === 0) {
 	//create poll information
-	var samplePolls = [
+	var samplePolls = [ 
 {
 	name: 'Geordi\'s Burgers',
 	description: 'Serves steak and burgers. Offers delivery.',

@@ -1,11 +1,79 @@
 /*Home(main) page and Nav styling*/
 
-.xtra {
-	height:300px;
-	background-color:#eee;
+
+	
+
+.screen {
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index:20;
+	height:1000px;
+	width: auto;
+
+
+
+}
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+ /* Bouncing Key---based on https://gist.github.com/gubi/8483199*/
+#key {
+	padding-top: 20px;
+	color: white;
+	z-index: 22;
+	display: block;
+	position: relative;
+	text-align: center;
+	font-size: 50px;
+	-moz-animation: bounce .5s infinite linear;
+    -o-animation: bounce .5s infinite linear;
+    -webkit-animation: bounce .5s infinite linear;
+    animation: bounce .5s infinite linear;
+	
 
 }
 
+
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.1em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.1em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.1em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.1em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.1em; }
+    100% { top: 0; }
+}
+
+.loading {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	color:white;
+	padding-top: 100px;
+}
 
 .h2 {
 color:#fff
@@ -35,14 +103,15 @@ margin:auto;
 
 .info {
 	text-align:center;
-
+	 
 }
 
 .lead {
 	align-content:center;
 	text-align:left;
-	font-size: 22px;
+	font-size: 24px;
 	padding:0 20px 0 40px;
+	 
 
 }
 
@@ -61,9 +130,12 @@ list-style:none;
 margin:auto;
 }
 
+
 .login:hover {
    background-color:#95dee3
 }
+
+
 
 .section {
 
@@ -78,6 +150,20 @@ font-size: 16px;
 	align-items:center;
 	margin-top:2%;
 	padding-bottom: 10%;
+
+	opacity: 1;
+-webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards; 
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:.5s;
+    -moz-animation-duration:.5s;
+    animation-duration:.5s;
+
 
 }
 
@@ -98,7 +184,7 @@ justify-content:center;
 
 }
 
-.flex-item-a {
+.flex-item {
 
 
 color: black;
@@ -111,29 +197,6 @@ font-size: 16px;
 
 }
 
-.flex-item-c {
-
-
-color: black;
-
-padding:0px;
-font-size: 16px;
-
-
-
-
-}
-
-.flex-item-b{
-
-color: black;
-
-padding: 0px;
-font-size: 16px;
-
-
-
-}
 
 .data-well {
 
@@ -247,7 +310,7 @@ font-size: 22px;
 .section {
 
 max-width:760px;
-height:650px
+height:500px
 
 
 }
@@ -265,8 +328,8 @@ justify-content:center;
 flex-direction:row;
 }
 
-.flex-item-a,
-.flex-item-b {
+
+.flex-item {
 	
 	height:auto;
 	text-align: left;
@@ -302,7 +365,9 @@ flex-direction:row;
 
 
 }
-
+.mobile-ignore {
+	display: none;
+}
 .logo {
 display:flex;
 justify-content:center;
@@ -323,12 +388,15 @@ text-align:center
 font-size: 24px;
 font-weight:500px;
 line-height:110%;
-text-align:center
+text-align:center;
+width: auto;
+margin:0 5% 0 8%;
+padding: 0;
 }
 
 .login {
       padding:5px 10px;
-   text-align:center;
+   text-align:justify;
 max-width:200px;
 
 }
