@@ -79,20 +79,31 @@
 color:#fff
 
 }
-
+/* Navigation Background */
 .bcolor {
-	background: linear-gradient(to top right, #003366 36%, #009999 78%);
-
+	
+	background-color:#103458;
+	height: 100px;
+	margin: auto;
+	padding: 20px;
 }
+/* Poll Section Background */
 .bcpolls {
-	background-color:#DFDBE5;
+background-color:#103458;
+padding-top: 50px;
+
 }
 
 .navbar-right {
 	margin-right: 180px
 }
-
-
+/* Top portion background */
+.herohead{
+	height: auto;
+	width: 100%;
+	background: linear-gradient(to top right, #003366 36%, #009999 78%);
+	
+}
 .logo {
 display:flex;
 justify-content:center;
@@ -103,6 +114,13 @@ margin:auto;
 
 .info {
 	text-align:center;
+	font-family: 'Sriracha', cursive;
+	font-size: 40px;
+	
+	width: 650px;
+
+	
+
 	 
 }
 
@@ -204,11 +222,7 @@ max-width:1010px;
 margin:auto;
 
 max-height:1000px;
-/*
-border:10px double #c2f0f0;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-background-color:#fff; */
 background-color:#DFDBE5;
 padding:40px;
 margin-bottom: 20px;
@@ -222,6 +236,7 @@ display:flex;
 -webkit-align-items: center;
 align-items:center;
 justify-content:center;
+margin: auto;
 
 
 }
@@ -246,23 +261,29 @@ a:link {
 	display:-webkit-flex;
 display:-ms-flexbox;
 display:flex;
--webkit-align-items: flex-start;
+
 align-items:flex-start;
 justify-content:center;
 text-align: center;
-background-color: #DFDBE5;
+background-color:#103458;
 font-variant: small-caps;
 
+
+
+/* Polls Section title */
 }
 #below h1 {
-	
+	font-family: 'Sriracha', cursive;
 	width:200px;
 	height:60px;
 	padding: 10px;
+	font-size: 60px;
+	text-decoration-line: underline;
 }
 
 .section.h4 {
-color: #004d99
+color: #004d99;
+
 }
 
 
@@ -313,6 +334,16 @@ max-width:760px;
 height:500px
 
 
+}
+.bcolor {
+	width: 100%;
+
+	padding:2px;
+	height: auto;
+}
+
+.pagetitle {
+	display: none;
 }
 
 #back2Top {
@@ -381,7 +412,7 @@ max-height:170px
 font-size:30px;
 font-weight:400;
 line-height:95%;
-text-align:center
+text-align:center;
 }
 
 .lead {
@@ -398,6 +429,7 @@ padding: 0;
       padding:5px 10px;
    text-align:justify;
 max-width:200px;
+
 
 }
 
